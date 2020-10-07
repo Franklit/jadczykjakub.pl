@@ -13,7 +13,16 @@ $blue : #21a4ee
         transform: translateX(-50%)
         font-size: 20px
         padding: .7rem 0
+        min-width: 150px
         // background-color: white
+        &::after
+            content: 'wybierz język'
+            font-size: 13px
+            color: white
+            position: absolute
+            top: 40px
+            left: 50%
+            transform: translateX(-50%)
         
         input
             display: none
@@ -41,9 +50,9 @@ $blue : #21a4ee
             color: rgba(12, 12, 12,0 ) 
         .active
             font-size: 25px
-            -webkit-box-shadow: 0px 1px 5px 1px rgba(255,255,255,1);
-            -moz-box-shadow: 0px 1px 5px 1px rgba(255,255,255,1);
-            box-shadow: 0px 1px 5px 1px rgba(255,255,255,1);
+            -webkit-box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
+            -moz-box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
+            box-shadow: 0px 0px 0px 2px rgba(255,255,255,1);
 
     .firstText
         width: 50rem
@@ -65,7 +74,15 @@ $blue : #21a4ee
     img
         width: 25rem
         height: 25rem
-
+    button
+        // position: absolute
+        // left: 50%
+        // bottom: 10%
+        // width: 100px
+        // height: 50px
+        background-color: white
+        border: none
+        
 
 .intro
     background: black
@@ -90,7 +107,7 @@ $blue : #21a4ee
 
 
 .slider
-    background: #945332
+    background: #2e90c7
     position: fixed
     top: 0
     left: 0
@@ -116,7 +133,9 @@ $blue : #21a4ee
     html
         font-size: 10px
 
-
+@media screen and ( max-width: 860px )
+    html
+        font-size: 8px
 
 @media screen and ( max-width: 760px )
     html
@@ -133,16 +152,17 @@ $blue : #21a4ee
             // min-height: 300px
 
 
-@media screen and ( max-width: 600px )
+@media screen and ( max-width: 650px )
     html
-        font-size: 4px
+        font-size: 6px
     .landing
+        min-width: 550px
         // display: none
-        flex-direction: column-reverse
-        align-items: center
+        // flex-direction: column-reverse
+        // align-items: center
         // justify-content: bottom
         .firstText
-            margin: 10px
+            margin-bottom: 150px
         img
-            // min-width: 300px
-            // min-height: 300px
+            min-width: 250px
+            min-height: 250px

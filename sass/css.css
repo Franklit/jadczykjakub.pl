@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +26,18 @@
           transform: translateX(-50%);
   font-size: 20px;
   padding: .7rem 0;
+  min-width: 150px;
+}
+
+.landing .language::after {
+  content: 'wybierz język';
+  font-size: 13px;
+  color: white;
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
 .landing .language input {
@@ -61,8 +74,8 @@
 
 .landing .language .active {
   font-size: 25px;
-  -webkit-box-shadow: 0px 1px 5px 1px white;
-  box-shadow: 0px 1px 5px 1px white;
+  -webkit-box-shadow: 0px 0px 0px 2px white;
+  box-shadow: 0px 0px 0px 2px white;
 }
 
 .landing .firstText {
@@ -89,6 +102,11 @@
 .landing img {
   width: 25rem;
   height: 25rem;
+}
+
+.landing button {
+  background-color: white;
+  border: none;
 }
 
 .intro {
@@ -126,7 +144,7 @@
 }
 
 .slider {
-  background: #945332;
+  background: #2e90c7;
   position: fixed;
   top: 0;
   left: 0;
@@ -158,27 +176,31 @@
   }
 }
 
+@media screen and (max-width: 860px) {
+  html {
+    font-size: 8px;
+  }
+}
+
 @media screen and (max-width: 760px) {
   html {
     font-size: 6px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 650px) {
   html {
-    font-size: 4px;
+    font-size: 6px;
   }
   .landing {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: column-reverse;
-            flex-direction: column-reverse;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    min-width: 550px;
   }
   .landing .firstText {
-    margin: 10px;
+    margin-bottom: 150px;
+  }
+  .landing img {
+    min-width: 250px;
+    min-height: 250px;
   }
 }
 
