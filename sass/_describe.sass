@@ -5,6 +5,7 @@ $blue2: #2982b5
     display: flex
     align-items:  center 
     flex-direction: column
+
     h1
         color: white
         padding: 2rem 0
@@ -19,8 +20,11 @@ $blue2: #2982b5
         font-size: 5rem
     .skills
         display: flex
+        flex-wrap: wrap
+        width: 75rem
+        justify-content: space-around
         .skill
-            width: 20rem
+            width: 25%
             // height: 100px
             margin: 10px
             background-color: red
@@ -37,9 +41,13 @@ $blue2: #2982b5
                 width: 100%
     .languages
         display: flex
+        flex-wrap: wrap
+        width: 75rem
+        justify-content: space-around
         .language
             background-color: red
             margin: 20px
+            width: 40%
             h1
             text-align: center
             img
@@ -47,7 +55,19 @@ $blue2: #2982b5
                 height: 150px
                 background-color: hotpink
             .description2
-                font-size: 20px
+                width: 100%
+                font-size: 25px
                 
 
-                
+@media screen and ( max-width: 920px )
+    .describe
+        .skills
+            .skill
+                width: 70%
+    
+@media screen and ( max-width: 920px )
+    .describe
+        .languages
+            .language
+                width: 70%
+                .description2

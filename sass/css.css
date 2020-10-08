@@ -16,6 +16,7 @@
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
+  min-width: 550px;
 }
 
 .landing .language {
@@ -102,6 +103,8 @@
 .landing img {
   width: 25rem;
   height: 25rem;
+  min-width: 250px;
+  min-height: 250px;
 }
 
 .landing button {
@@ -154,56 +157,6 @@
           transform: translateY(100%);
 }
 
-@media screen and (max-width: 1300px) {
-  html {
-    font-size: 14px;
-  }
-}
-
-@media screen and (max-width: 1055px) {
-  html {
-    font-size: 12px;
-  }
-  img {
-    min-width: 320px;
-    min-height: 320px;
-  }
-}
-
-@media screen and (max-width: 920px) {
-  html {
-    font-size: 10px;
-  }
-}
-
-@media screen and (max-width: 860px) {
-  html {
-    font-size: 8px;
-  }
-}
-
-@media screen and (max-width: 760px) {
-  html {
-    font-size: 6px;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  html {
-    font-size: 6px;
-  }
-  .landing {
-    min-width: 550px;
-  }
-  .landing .firstText {
-    margin-bottom: 150px;
-  }
-  .landing img {
-    min-width: 250px;
-    min-height: 250px;
-  }
-}
-
 .describe {
   height: 100vh;
   background-color: #2982b5;
@@ -241,10 +194,15 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .describe .skills .skill {
-  width: 20rem;
+  width: 25%;
   margin: 10px;
   background-color: red;
 }
@@ -272,11 +230,17 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 75rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .describe .languages .language {
   background-color: red;
   margin: 20px;
+  width: 40%;
   text-align: center;
 }
 
@@ -287,10 +251,47 @@
 }
 
 .describe .languages .language .description2 {
-  font-size: 20px;
+  width: 100%;
+  font-size: 25px;
+}
+
+@media screen and (max-width: 920px) {
+  .describe .skills .skill {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .describe .languages .language {
+    width: 70%;
+  }
 }
 
 body {
   background: #21a4ee;
+}
+
+@media screen and (max-width: 1300px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  html {
+    font-size: 8px;
+  }
 }
 /*# sourceMappingURL=css.css.map */
