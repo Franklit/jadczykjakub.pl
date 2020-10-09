@@ -1,0 +1,46 @@
+.contact
+    display: flex
+    flex-direction: column
+    align-items: center
+    .mainImg
+        width: 100%
+        height: 100vh
+        background: url('../img/karatekid.jpg')
+        background-size: cover
+        background-position: center
+        background-attachment: fixed
+        background-repeat: no-repeat
+        position: relative
+        // display: flex
+
+        h1
+            width: 100%
+            background-color: rgba(33,164,238, .5 )
+            color: black
+            text-align: center
+            font-size: 40px
+            position: absolute
+            top: 50%
+            transform: translateY(-50%)
+            
+    .interests
+        width: 75rem
+        // height: 400px
+        background-color: hotpink
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        .interest
+            width: 40%
+            background-color: lightblue
+            margin: 20px
+            img
+                width: 100px
+                height: 100px
+                background-color: blue
+
+@media screen and ( max-width: 920px )
+    .contact
+        .interests
+            .interest
+                // width: 70%

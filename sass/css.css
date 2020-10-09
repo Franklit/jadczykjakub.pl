@@ -132,7 +132,6 @@
 
 .intro .intro-text {
   color: white;
-  font-size: 3rem;
 }
 
 .intro .intro-text .hide {
@@ -158,7 +157,7 @@
 }
 
 .describe {
-  height: 100vh;
+  min-height: 100vh;
   background-color: #2982b5;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -175,19 +174,17 @@
 .describe h1 {
   color: white;
   padding: 2rem 0;
-  font-size: 3rem;
+  font-size: 50px;
 }
 
 .describe p {
-  width: 40rem;
-  background-color: white;
-  font-size: 2rem;
+  width: 60rem;
+  text-align: justify;
+  font-size: 20px;
 }
 
 .describe h2 {
-  padding: 2rem 0;
   color: white;
-  font-size: 5rem;
 }
 
 .describe .skills {
@@ -204,21 +201,30 @@
 .describe .skills .skill {
   width: 25%;
   margin: 10px;
-  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .describe .skills .skill img {
-  width: 100%;
-  height: 200px;
-  background-color: hotpink;
+  width: 300px;
 }
 
 .describe .skills .skill h3 {
   text-align: center;
+  font-size: 40px;
 }
 
 .describe .skills .skill h4 {
   text-align: center;
+  font-size: 30px;
 }
 
 .describe .skills .skill .description {
@@ -238,16 +244,28 @@
 }
 
 .describe .languages .language {
-  background-color: red;
-  margin: 20px;
   width: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.describe .languages .language h6 {
+  width: 100%;
   text-align: center;
+  font-size: 30px;
 }
 
 .describe .languages .language img {
-  width: 100%;
+  width: 250px;
   height: 150px;
-  background-color: hotpink;
 }
 
 .describe .languages .language .description2 {
@@ -263,8 +281,182 @@
 
 @media screen and (max-width: 920px) {
   .describe .languages .language {
-    width: 70%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
+  .describe .languages .language:last-child {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .describe .languages .language img {
+    width: 250px;
+    height: 150px;
+  }
+  .describe .languages .language .description2 {
+    width: calc( 100% - 300px);
+    height: 200px;
+    font-size: 20px;
+  }
+}
+
+.portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.portfolio h1 {
+  padding: 40px;
+}
+
+.portfolio .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 75rem;
+}
+
+.portfolio .projects .project {
+  width: 40%;
+  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.portfolio .projects .project img {
+  width: 300px;
+  height: 300px;
+  background-color: pink;
+}
+
+.portfolio .projects .project h3 {
+  font-size: 2.5rem;
+}
+
+.portfolio .projects .project p {
+  padding: 0 40px;
+  text-align: justify;
+  font-size: 20px;
+}
+
+@media screen and (max-width: 920px) {
+  .portfolio .projects {
+    width: 100%;
+  }
+  .portfolio .projects .project {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .portfolio .projects .project:nth-child(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .portfolio .projects .project p span {
+    color: white;
+  }
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact .mainImg {
+  width: 100%;
+  height: 100vh;
+  background: url("../img/karatekid.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.contact .mainImg h1 {
+  width: 100%;
+  background-color: rgba(33, 164, 238, 0.5);
+  color: black;
+  text-align: center;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.contact .interests {
+  width: 75rem;
+  background-color: hotpink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .interests .interest {
+  width: 40%;
+  background-color: lightblue;
+  margin: 20px;
+}
+
+.contact .interests .interest img {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
 }
 
 body {
