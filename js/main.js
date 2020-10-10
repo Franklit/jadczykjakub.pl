@@ -62,3 +62,48 @@ const language = {
         button: "Mehr"
     }
 }
+
+
+
+//cubic
+
+const cube = document.querySelector('.cube')
+const interestText = document.querySelector('.interest')
+
+const classCube = ['show-front', 'show-right', 'show-back', 'show-left', 'show-top', 'show-bottom'];
+const interests = ['sport', 'podróze', 'gory', 'morsowanie', 'języki obce', 'dobre jedzenie' ]
+let count = 0;
+
+const changeSide = ()=>{    
+    if(count<=classCube.length-1){
+        cube.classList.add(`${classCube[count]}`)
+        interestText.textContent = interests[count]
+    }else{
+        cube.classList.remove(`${classCube[count-1]}`)
+        count = 0;
+        interestText.textContent = interests[count]
+    }
+    // console.log(count)
+    cube.classList.remove(`${classCube[count-1]}`)
+    count++
+    
+
+}
+
+let intervalCube = setInterval(changeSide, 3000);
+// intervalCube()
+let flag = true;
+
+function clearOrResume(){
+    console.log(flag)
+    if(flag){
+        clearInterval(intervalCube);
+        flag = !flag;
+    }else{
+        intervalCube = setInterval(changeSide, 3000);
+        flag = !flag;
+    }
+}
+// clearInterval(intervalCube)
+// cube.addEventListener('click', clearInterval(intervalCube) )
+cube.addEventListener('click', clearOrResume)

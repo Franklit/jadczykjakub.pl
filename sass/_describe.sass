@@ -5,23 +5,12 @@ $blue2: #2982b5
     display: flex
     align-items:  center 
     flex-direction: column
-    // color: white
-
     h1
         color: white
         padding: 2rem 0
         font-size: 50px
-    p
-        width: 60rem
-        text-align: justify
-        font-size: 20px
-        
-        // background-color: white
-        // font-size: 2rem
     h2
-        // padding: 2rem 0
         color: white
-        // font-size: 5rem
     .skills
         display: flex
         flex-wrap: wrap
@@ -29,18 +18,12 @@ $blue2: #2982b5
         justify-content: space-around
         .skill
             width: 25%
-            // height: 100px
             margin: 10px
             display: flex
             flex-direction: column
             align-items: center
-            // flex-direction: columns
-            // justify-content: center
             img
                 width: 300px
-                // height: 200px
-                
-               
             h3
                 text-align: center
                 font-size: 40px
@@ -48,65 +31,58 @@ $blue2: #2982b5
                 text-align: center
                 font-size: 30px
             .description
-                font-size: 25px
+                font-size: 2rem
                 width: 100%
+                text-align: justify
     .languages
         display: flex
         flex-wrap: wrap
-        // flex-direction: 
         width: 75rem
         justify-content: space-around
    
             
         .language
-            // background-color: red
-            // margin: 20px
             width: 40%
             display: flex
             flex-direction: column 
             align-items: center 
-            // justify-content: flex-start
-            // align-items: center
-
-            h6
-                width: 100%
-                text-align: center
-                font-size: 30px
+            margin: 20px
             img
-                width: 250px
-                height: 150px
-            .description2
-                width: 100%
-                font-size: 25px
+                width: 25rem
+                height: 17rem
+            div
+                h6
+                    width: 100%
+                    text-align: center
+                    font-size: 30px
+                .description2
+                    width: 100%
+                    font-size: 2.5rem
                 
 
 @media screen and ( max-width: 920px )
     .describe
         .skills
+            width: 100%
             .skill
                 width: 70%
     
 @media screen and ( max-width: 920px )
     .describe
         .languages
-            // &:last-child
-                
-
+            width: 100%
             .language
-                width: 100%
-                display: flex
-                flex-direction: row
-                flex-wrap: wrap
-                align-items: flex-start
-                &:last-child
-                    display: flex
-                    flex-direction: row-reverse
-                    
+                width: 70%               
                 img
-                    width: 250px
-                    height: 150px
                 .description2
-                    width: calc( 100% - 300px )
-                    height: 200px
-                    font-size: 20px
+
+    
+@media screen and ( max-width: 650px )
+    .describe
+        .languages
+            widt
+            .language
+                
+                img
+                .description2
 
