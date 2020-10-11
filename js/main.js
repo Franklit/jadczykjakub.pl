@@ -71,7 +71,7 @@ const cube = document.querySelector('.cube')
 const interestText = document.querySelector('.interest')
 
 const classCube = ['show-front', 'show-right', 'show-back', 'show-left', 'show-top', 'show-bottom'];
-const interests = ['sport', 'podróze', 'gory', 'morsowanie', 'języki obce', 'dobre jedzenie' ]
+const interests = ['Sport', 'Podróze', 'Góry', 'Morsowanie', 'Języki obce', 'Dobre jedzenie' ]
 let count = 0;
 
 const changeSide = ()=>{    

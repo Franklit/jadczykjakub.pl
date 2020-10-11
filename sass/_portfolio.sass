@@ -2,8 +2,10 @@
     display: flex
     align-items: center
     flex-direction: column
+    font-family: $fontBottom
+    background-color: $darkBlue
     h1
-        padding: 40px
+        @include h1
     .projects
         display: flex
         flex-wrap: wrap
@@ -15,12 +17,13 @@
             align-items: center
             width: 40%
             // height: 100px
-            background-color: #46b2ef
+            background-color: $mediumBlue
             color: white
             padding: 10px
             margin: 10px
             border-bottom: 1px solid rgba(0,0,0,.1)
             transition: .2s
+            color: $whiteOpa
             &:hover
                 background-color: white
                 color: black   
@@ -29,14 +32,17 @@
                 height: 200px
                 // background-color: orange 
                 object-fit: cover
-            h3
+            h4
                 width: 100%
                 font-size: 2.5rem
                 text-align: center
+                font-family: $fontTop
+                @include h4
             p
                 width: 90%
                 text-align: justify
                 font-size: 2rem
+                // color: $whiteOpa
 
 
 @media screen and ( max-width: 920px )
@@ -51,7 +57,19 @@
                 h3
                 p
 
-
+// @media screen and ( max-width: 700px )
+//     .portfolio
+//         .contact
+//             h1
+//                 display: none
+        // .projects
+        //     width: 100%
+        //     .project
+        //         width: 80% 
+        //         img 
+                    
+        //         h3
+        //         p
 // @media screen and ( max-width: 650px )
 //     .portfolio
 //         .projects

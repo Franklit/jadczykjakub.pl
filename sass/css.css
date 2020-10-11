@@ -8,40 +8,77 @@
 
 .landing {
   min-height: 100vh;
-  margin-left: 9%;
   position: relative;
 }
 
 .landing .firstText {
-  width: 50rem;
-  height: 35rem;
-  margin-bottom: 20rem;
+  width: 45rem;
+  height: 30rem;
   background-image: url("../img/cloud.png");
   background-size: 100% 100%;
   text-align: center;
   margin: 0;
   position: absolute;
-  bottom: 20rem;
-  left: 20rem;
+  bottom: 23rem;
+  left: 30rem;
+  padding-top: 1.7rem;
 }
 
 .landing .firstText h1 {
   width: 80%;
   margin: 0 auto;
-  font-size: 10rem;
+  font-size: 8rem;
+  font-family: Saira Condensed;
+  line-height: 100%;
 }
 
 .landing .firstText p {
   width: 80%;
   margin: 0 auto;
-  font-size: 4rem;
+  font-size: 3rem;
+  font-family: Roboto;
 }
 
 .landing img {
-  width: 30rem;
-  height: 30rem;
+  width: 25rem;
+  height: 25rem;
+  position: absolute;
+  bottom: 3rem;
+  left: 10rem;
+}
+
+.landing .more {
   position: absolute;
   bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #105277;
+  font-size: 2rem;
+  font-family: Saira Condensed;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.landing .more:hover {
+  background-color: #2982b5;
+}
+
+.landing .more:hover i {
+  color: black;
+}
+
+.landing .more:hover span {
+  color: black;
+}
+
+.landing .more a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.landing .more i {
+  font-size: 1rem;
 }
 
 .landing .language {
@@ -124,6 +161,9 @@
 
 .intro .intro-text {
   color: white;
+  font-size: 3rem;
+  text-align: center;
+  font-family: Saira Condensed;
 }
 
 .intro .intro-text .hide {
@@ -138,7 +178,7 @@
 }
 
 .slider {
-  background: #1153f6;
+  background: #2982b5;
   position: fixed;
   top: 0;
   left: 0;
@@ -155,6 +195,7 @@
   .landing .firstText {
     width: 35rem;
     height: 24.5rem;
+    left: 20rem;
   }
   .landing .firstText h1 {
     font-size: 7rem;
@@ -165,6 +206,29 @@
   .landing img {
     width: 24rem;
     height: 24rem;
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .landing {
+    margin-left: 0;
+  }
+  .landing .firstText {
+    width: 25rem;
+    height: 14.5rem;
+    left: 14rem;
+    bottom: 14rem;
+  }
+  .landing .firstText h1 {
+    font-size: 4rem;
+  }
+  .landing .firstText p {
+    font-size: 1.8rem;
+  }
+  .landing img {
+    width: 17rem;
+    height: 17rem;
   }
 }
 
@@ -181,16 +245,23 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: Roboto;
 }
 
 .describe h1 {
-  color: white;
-  padding: 2rem 0;
-  font-size: 50px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 7rem;
+  font-family: Saira Condensed;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .describe h2 {
   color: white;
+  font-size: 5rem;
+  font-family: Saira Condensed;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .describe .skills {
@@ -226,17 +297,22 @@
 .describe .skills .skill h3 {
   text-align: center;
   font-size: 40px;
+  font-family: Saira Condensed;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .describe .skills .skill h4 {
   text-align: center;
   font-size: 30px;
+  font-family: Saira Condensed;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .describe .skills .skill .description {
   font-size: 2rem;
   width: 100%;
   text-align: justify;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .describe .languages {
@@ -270,15 +346,17 @@
   height: 17rem;
 }
 
-.describe .languages .language div h6 {
+.describe .languages .language div h3 {
   width: 100%;
   text-align: center;
-  font-size: 30px;
+  font-size: 6rem;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .describe .languages .language div .description2 {
   width: 100%;
   font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 @media screen and (max-width: 920px) {
@@ -310,10 +388,16 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  font-family: Roboto;
+  background-color: #105277;
 }
 
 .portfolio h1 {
-  padding: 40px;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 7rem;
+  font-family: Saira Condensed;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .portfolio .projects {
@@ -340,13 +424,14 @@
       -ms-flex-align: center;
           align-items: center;
   width: 40%;
-  background-color: #46b2ef;
+  background-color: #2982b5;
   color: white;
   padding: 10px;
   margin: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   -webkit-transition: .2s;
   transition: .2s;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .portfolio .projects .project:hover {
@@ -361,10 +446,12 @@
      object-fit: cover;
 }
 
-.portfolio .projects .project h3 {
+.portfolio .projects .project h4 {
   width: 100%;
   font-size: 2.5rem;
   text-align: center;
+  font-family: Saira Condensed;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .portfolio .projects .project p {
@@ -393,6 +480,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #2982b5;
+}
+
+.contact h1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 7rem;
+  font-family: Saira Condensed;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .contact .mainImg {
@@ -408,18 +504,21 @@
 
 .contact .mainImg h1 {
   width: 100%;
-  background-color: rgba(33, 164, 238, 0.5);
-  color: black;
+  background-color: rgba(16, 82, 119, 0.8);
+  color: rgba(255, 255, 255, 0.6);
   text-align: center;
-  font-size: 40px;
+  font-size: 4rem;
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  font-family: Saira Condensed;
 }
 
 .contact .interest {
-  font-size: 40px;
+  font-size: 6rem;
+  font-family: Saira Condensed;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 .contact .interests {
@@ -521,10 +620,12 @@
 }
 
 .contact .contactMedia {
-  background-color: lightblue;
+  background-color: rgba(0, 0, 0, 0.7);
   width: 100%;
   text-align: center;
   font-size: 20px;
+  font-family: Roboto;
+  color: white;
 }
 
 .contact .contactMedia .contact {
@@ -539,6 +640,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   font-size: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .contact .contactMedia .contact .media {
@@ -554,19 +656,25 @@
           flex-direction: column;
 }
 
+.contact .contactMedia .contact .media:hover i {
+  color: #2982b5;
+}
+
+.contact .contactMedia .contact .media:hover span {
+  color: #105277;
+}
+
 .contact .contactMedia .contact .media span {
   font-size: 20px;
 }
 
 .contact .contactMedia .contact .media i {
-  color: red;
+  color: white;
   font-size: 40px;
 }
 
 .contact .contactMedia footer {
   width: 100%;
-  height: 50px;
-  background-color: orange;
 }
 
 @media screen and (max-width: 920px) {
@@ -622,6 +730,9 @@
 }
 
 @media screen and (max-width: 620px) {
+  .contact h1 {
+    font-size: 6rem;
+  }
   .contact .interests {
     width: 220px;
     height: 220px;
@@ -671,7 +782,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1055px) {
+@media screen and (max-width: 1095px) {
   html {
     font-size: 12px;
   }

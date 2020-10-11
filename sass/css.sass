@@ -2,6 +2,35 @@
     margin: 0
     padding: 0
     box-sizing: border-box
+$fontTop: Saira Condensed
+$fontBottom: Roboto
+
+$mediumBlue: #2982b5
+$darkBlue: #105277
+$whiteOpa: rgba(255,255,255, 0.7)
+
+@mixin h1()
+    color: $whiteOpa
+    font-size: 7rem
+    font-family: $fontTop
+    text-transform: uppercase
+    text-align: center
+
+@mixin h2()
+    color: white
+    font-size: 5rem
+    font-family: $fontTop
+    text-transform: uppercase
+    text-align: center
+@mixin h3()
+    color: $darkBlue
+    // -webkit-box-shadow: 0px 0px 0px 2px rgba(255,255,255,1)
+    // -moz-box-shadow: 0px 0px 0px 2px rgba(255,255,255,1)
+    // box-shadow: 0px 0px 0px 2px rgba(255,255,255,1)
+
+@mixin h4()
+    color: rgba(0,0 ,0 ,.7 )
+    
 
 @import "_top.sass"
 @import "_describe.sass"
@@ -20,7 +49,7 @@ body
     html
         font-size: 14px
     
-@media screen and ( max-width: 1055px )
+@media screen and ( max-width: 1095px )
     html
         font-size: 12px
    
