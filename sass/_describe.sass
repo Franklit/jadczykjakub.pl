@@ -8,6 +8,8 @@ $blue2: #2982b5
     font-family: $fontBottom
     h1
         @include h1
+        padding-bottom: 0
+        
     h2
         @include h2
     .skills
@@ -23,38 +25,54 @@ $blue2: #2982b5
             align-items: center
             img
                 width: 300px
+                max-width: 100%
             h3
                 text-align: center
                 text-transform: uppercase
                 font-size: 40px
-                font-family: $fontTop
-                @include h4
+                
+                @include h3
             h4
                 text-align: center
-                font-size: 30px
-                font-family: $fontTop
+
                 @include h4
             .description
-                font-size: 2rem
+                font-size: 1.5rem
                 width: 100%
-                text-align: justify
+                text-align: center
                 color: $whiteOpa
     .languages
         display: flex
         flex-wrap: wrap
         width: 75rem
         justify-content: space-around
-   
+        .divShow
+            width: 100px
+            height: 100px
+            background-color: red
+            display: none
+            position: fixed
+
+
             
-        .language
+        .language1
             width: 40%
             display: flex
             flex-direction: column 
             align-items: center 
             margin: 20px
+            // &:hover
+            //     background-color: $darkBlue
+            
+            
+                
+                
+
+
             img
                 width: 25rem
-                height: 17rem
+                // height: 17rem
+                max-width: 100%
             div
                 h3
                     width: 100%
@@ -63,9 +81,10 @@ $blue2: #2982b5
                     @include h4
                 .description2
                     width: 100%
-                    font-size: 2.5rem
+                    font-size: 1.5rem
                     color: $whiteOpa
-                    text-align: justify
+                    text-align: center
+                    margin-bottom: 2rem
                     span
                         // color: rgba(0,0 ,0 ,0.3 )
                         text-decoration: underline
@@ -76,16 +95,35 @@ $blue2: #2982b5
         .skills
             width: 100%
             .skill
-                width: 70%
+                width: 50%
     
 @media screen and ( max-width: 920px )
     .describe
         .languages
             width: 100%
             .language
-                width: 70%               
+                width: 60%               
                 img
                 .description2
+
+@media screen and ( max-width: 550px )
+    .describe
+        .skills
+            width: 100%
+            .skill
+                width: 100%
+                padding: 0 20%   
+    
+@media screen and ( max-width: 550px )
+    .describe
+        .languages
+            width: 100%
+            .language
+                width: 100%
+                padding: 0 20%   
+                img
+                .description2
+
 
     
 @media screen and ( max-width: 650px )

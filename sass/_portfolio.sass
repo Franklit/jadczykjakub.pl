@@ -4,6 +4,7 @@
     flex-direction: column
     font-family: $fontBottom
     background-color: $darkBlue
+    padding-bottom: 5rem
     h1
         @include h1
         // color: white
@@ -20,34 +21,39 @@
             // background-color: rgba(16, 82, 119, 0.8)
             background-color: #23668a
             color: white
-            padding: 10px
-            margin: 10px
+            padding: 30px
+            margin: 3rem
             border-bottom: 1px solid rgba(0,0,0,.1)
             transition: .2s
             color: $whiteOpa
             &:hover
                 background-color: $mediumBlue
-                color: black   
+                
             &:hover h4
-                color: black
-                    
+                color: black                             
             img
-                width: 90%
+                width: 100%
                 height: 200px
-                // background-color: orange 
                 object-fit: cover
             h4
                 width: 100%
-                font-size: 2.5rem
                 text-align: center
-                font-family: $fontTop
+                
                 @include h4
                 color: $whiteOpa
+            
             p
-                width: 90%
-                text-align: justify
-                font-size: 2rem
-                // color: $whiteOpa
+                width: 100%
+                text-align: center
+                font-size: 1.5rem
+                color: $whiteOpa
+        .inProgress
+            cursor: default
+            background-color: #0c2533
+
+            &:hover
+                background-color: #0c2533
+                
 
 
 @media screen and ( max-width: 920px )

@@ -1,11 +1,5 @@
 //animation first page
-// const tl = gsap.timeline({defaults: {ease: 'power1.out'} });
 
-// tl.to('.text', {y:'0%', duration: 1, stagger: 0.25});
-// tl.to('.slider', {y: '-100%', duration: 1.5, delay: 0.5});
-// tl.to('.intro', {y: '-100%', duration: 1}, '-=1');
-// tl.fromTo('nav', {opacity: 0}, {opacity: 1, duration: 1});
-// tl.fromTo('.firstText', {opacity: 0}, {opacity: 1, duration: 1}, '-=1');
 
 //smooth scroll
 const more = document.querySelector('.more a')
@@ -179,7 +173,7 @@ const languages = {
         },
         de: {
             h1Port: "Meine Projekte",
-            h4Port: ['1proj de', 'Web Physiotherapie', 'Web Handgemacht ', 'In progress'],
+            h4Port: ['Converter', 'Web Physiotherapie', 'Web Handgemacht ', 'In progress'],
             pPort: ['Konverter, der Ihnen die Beziehung zwischen zwei beliebigen Währungen zeigt. Aktuelle Wechselkurse über API.', 'Raumentwicklung mit Flexbox. Navigation zur Verfolgung der aktuellen Position, die mit JavaScript ermittelt wurde.', 'Galerie mit der Lightbox-Bibliothek erhalten. Formularvalidierung nur Front-End- und Positionsverfolgung mit Javascript.', '...'],
         }
     },
@@ -252,3 +246,33 @@ function clearOrResume(){
 }
 
 cube.addEventListener('click', clearOrResume)
+
+
+
+// hover
+
+// const divLang = document.querySelector('.language1')
+// const divShow = document.querySelector('.divShow')
+// let leftPx;
+// let topPx;
+
+// divLang.addEventListener('mousemove', hoverLang)
+
+
+// function hoverLang(e){
+//     leftPx = e.clientX
+//     topPx = e.clientY
+//     divShow.style.display = 'block'
+//     divShow.style.left = `${leftPx}px`
+//     divShow.style.top = `${topPx}px`
+//     console.log('siema')
+
+//     if(divShow)
+
+//     // console.log(divLang.getBoundingClientRect())
+
+
+// }
+
+
+// hoverLang()

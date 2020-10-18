@@ -11,6 +11,7 @@
     h1
 
         @include h1
+        padding-bottom: 0
         
     .mainImg
         width: 100%
@@ -33,14 +34,16 @@
             top: 50%
             transform: translateY(-50%)
             font-family: $fontTop
+            padding: 10px
+
 
     .interest
         font-size: 4rem
         @include h4
-        font-family: $fontBottom
+        font-family: $fontTop
         text-transform: uppercase
-        color: $whiteOpa
-        font-weight: 100
+        color: $darkBlue
+        // font-weight: 100
 
                 
     .interests
@@ -61,7 +64,7 @@
             div
                 width: 400px
                 height: 400px
-                border: 2px black solid
+                border: 2px $darkBlue solid
                 box-sizing: border-box
                 position: absolute
                 background-size: 100% 100%
@@ -103,6 +106,8 @@
         font-size: 20px
         font-family: $fontBottom
         color: white
+        h2
+            padding: 1rem
         .contact
             display: flex
             flex-direction: row
@@ -110,13 +115,12 @@
             font-size: 10px
             background-color: rgba(0,0 ,0 ,.7 )
             
-            
-            // background-color: pink
+
             .media
-                width: 200px
+                width: 11rem
                 cursor: pointer
                 // background-color: yellow
-                margin: 10px
+                margin: 1rem
                 display: flex
                 flex-direction: column
                 &:hover i
@@ -124,11 +128,13 @@
                 &:hover span
                     color: $darkBlue                
                 span
-                    font-size: 20px
+                    font-size: 1rem
+                    padding: .5rem
                 
                 i
                     color: white
-                    font-size: 40px
+                    font-size: 2.5rem
+                    padding: .5rem
         footer
             width: 100%
             // height: 50px
@@ -179,7 +185,7 @@
 @media screen and ( max-width: 620px )
     .contact
         h1
-            font-size: 6rem
+            font-size: 4rem
         .interests
             width: 220px
             height: 220px
