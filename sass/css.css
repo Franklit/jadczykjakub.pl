@@ -6,48 +6,48 @@
   text-decoration: none;
 }
 
-.landing {
+.topPage {
   min-height: 100vh;
   position: relative;
+  background-color: #2982b5;
 }
 
-.landing .firstText {
-  width: 45rem;
-  height: 30rem;
+.topPage .firstText {
+  width: 37rem;
+  height: 27rem;
   background-image: url("../img/cloud.png");
   background-size: 100% 100%;
   text-align: center;
-  margin: 0;
   position: absolute;
   bottom: 23rem;
-  left: 30rem;
+  left: 40rem;
   padding-top: 1.7rem;
 }
 
-.landing .firstText h1 {
+.topPage .firstText h1 {
   width: 80%;
   margin: 0 auto;
   font-size: 8rem;
-  font-family: Saira Condensed;
   line-height: 100%;
+  font-family: Saira Condensed;
 }
 
-.landing .firstText p {
+.topPage .firstText p {
   width: 80%;
   margin: 0 auto;
   font-size: 3rem;
   font-family: Roboto;
 }
 
-.landing img {
-  width: 25rem;
+.topPage img {
+  width: 35rem;
   max-width: 100%;
   position: absolute;
   bottom: 3rem;
   left: 10rem;
 }
 
-.landing .more {
+.topPage .more {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -60,39 +60,38 @@
   text-align: center;
 }
 
-.landing .more:hover {
+.topPage .more:hover {
   background-color: #2982b5;
 }
 
-.landing .more:hover i {
+.topPage .more:hover i {
   color: black;
 }
 
-.landing .more:hover span {
+.topPage .more:hover span {
   color: black;
 }
 
-.landing .more a {
-  text-decoration: none;
+.topPage .more a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.landing .more i {
+.topPage .more i {
   font-size: 1rem;
 }
 
-.landing .language {
+.topPage .languageChoice {
   position: absolute;
   top: 0;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   font-size: 20px;
   padding: .7rem 0;
   min-width: 150px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
 
-.landing .language::after {
+.topPage .languageChoice::after {
   content: '';
   font-size: 13px;
   color: white;
@@ -103,15 +102,15 @@
           transform: translateX(-50%);
 }
 
-.landing .language input {
+.topPage .languageChoice input {
   display: none;
 }
 
-.landing .language .label {
+.topPage .languageChoice .label {
   cursor: pointer;
 }
 
-.landing .language .en {
+.topPage .languageChoice .en {
   background: url("../img/en.gif");
   background-size: cover;
   background-position: center;
@@ -119,7 +118,7 @@
   color: rgba(12, 12, 12, 0);
 }
 
-.landing .language .de {
+.topPage .languageChoice .de {
   background: url("../img/de.jpg");
   background-size: cover;
   background-position: center;
@@ -127,7 +126,7 @@
   color: rgba(12, 12, 12, 0);
 }
 
-.landing .language .pol {
+.topPage .languageChoice .pol {
   background: url("../img/pl.gif");
   background-size: cover;
   background-position: center;
@@ -135,83 +134,48 @@
   color: rgba(12, 12, 12, 0);
 }
 
-.landing .language .active {
+.topPage .languageChoice .active {
   font-size: 25px;
   -webkit-box-shadow: 0px 0px 0px 2px white;
   box-shadow: 0px 0px 0px 2px white;
 }
 
-.intro {
-  background: black;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 1300px) {
+  .topPage {
+    min-height: 900px;
+    height: 100vh;
+  }
+  .topPage .firstText {
+    width: 40rem;
+    max-width: 590px;
+    height: 30rem;
+  }
 }
 
-.intro .intro-text {
-  color: white;
-  font-size: 3rem;
-  text-align: center;
-  font-family: Saira Condensed;
-}
-
-.intro .intro-text .hide {
-  background: black;
-  overflow: hidden;
-}
-
-.intro .intro-text .hide span {
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-  display: inline-block;
-}
-
-.slider {
-  background: #2982b5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -webkit-transform: translateY(100%);
-          transform: translateY(100%);
-}
-
-@media screen and (min-width: 1500px) {
-  .landing .firstText {
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
+@media screen and (min-width: 1200px) {
+  .topPage .firstText {
+    width: 37rem;
+    height: 27rem;
+    max-width: 590px;
   }
 }
 
 @media screen and (max-width: 650px) {
-  .landing {
+  .topPage {
     margin-left: 0;
   }
-  .landing .firstText {
+  .topPage .firstText {
     width: 35rem;
     height: 24.5rem;
     left: 20rem;
   }
-  .landing .firstText h1 {
+  .topPage .firstText h1 {
     font-size: 7rem;
   }
-  .landing .firstText p {
+  .topPage .firstText p {
     font-size: 2.8rem;
   }
-  .landing img {
+  .topPage img {
     width: 24rem;
     height: 24rem;
     left: 0;
@@ -219,25 +183,48 @@
 }
 
 @media screen and (max-width: 500px) {
-  .landing {
+  .topPage {
     margin-left: 0;
   }
-  .landing .firstText {
+  .topPage .firstText {
     width: 25rem;
     height: 14.5rem;
     left: 14rem;
     bottom: 14rem;
   }
-  .landing .firstText h1 {
+  .topPage .firstText h1 {
     font-size: 4rem;
   }
-  .landing .firstText p {
+  .topPage .firstText p {
     font-size: 1.8rem;
   }
-  .landing img {
+  .topPage img {
     width: 17rem;
     height: 17rem;
   }
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px #105277;
+          box-shadow: inset 0 0 5px #105277;
+  background: #2982b5;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #105277;
+  opacity: .7;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #216891;
 }
 
 .describe {
@@ -264,7 +251,7 @@
   text-align: center;
   letter-spacing: .1rem;
   padding: 2.5rem;
-  padding-bottom: 0;
+  text-shadow: 1px 1px #21a4ee;
 }
 
 .describe h2 {
@@ -275,6 +262,7 @@
   text-align: center;
   letter-spacing: .2rem;
   padding: 3rem;
+  text-shadow: 1px 1px black;
 }
 
 .describe .skills {
@@ -309,21 +297,20 @@
 }
 
 .describe .skills .skill h3 {
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 40px;
   color: rgba(0, 0, 0, 0.7);
   font-size: 2.5rem;
   font-family: Saira Condensed;
   letter-spacing: .2rem;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .describe .skills .skill h4 {
-  text-align: center;
   color: rgba(0, 0, 0, 0.7);
   font-size: 2rem;
   letter-spacing: .2rem;
   font-family: Saira Condensed;
+  text-align: center;
 }
 
 .describe .skills .skill .description {
@@ -372,6 +359,19 @@
   max-width: 100%;
 }
 
+.describe .languages .language1 div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .describe .languages .language1 div h3 {
   width: 100%;
   text-align: center;
@@ -380,6 +380,7 @@
   font-size: 2rem;
   letter-spacing: .2rem;
   font-family: Saira Condensed;
+  text-align: center;
 }
 
 .describe .languages .language1 div .description2 {
@@ -388,10 +389,20 @@
   color: rgba(255, 255, 255, 0.7);
   text-align: center;
   margin-bottom: 2rem;
+  min-height: 5rem;
 }
 
-.describe .languages .language1 div .description2 span {
-  text-decoration: underline;
+.describe .languages .language1 div .description22 {
+  width: 100%;
+  font-size: 1.3rem;
+  color: #105277;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: Saira Condensed;
+}
+
+.describe .languages .language1 div img {
+  width: 150px;
 }
 
 @media screen and (max-width: 920px) {
@@ -407,8 +418,9 @@
   .describe .languages {
     width: 100%;
   }
-  .describe .languages .language {
-    width: 60%;
+  .describe .languages .language1 {
+    width: 100%;
+    padding: 0 20%;
   }
 }
 
@@ -426,7 +438,7 @@
   .describe .languages {
     width: 100%;
   }
-  .describe .languages .language {
+  .describe .languages .language1 {
     width: 100%;
     padding: 0 20%;
   }
@@ -456,6 +468,7 @@
   text-align: center;
   letter-spacing: .1rem;
   padding: 2.5rem;
+  text-shadow: 1px 1px #21a4ee;
 }
 
 .portfolio .projects {
@@ -508,12 +521,12 @@
 }
 
 .portfolio .projects .project h4 {
-  width: 100%;
-  text-align: center;
   color: rgba(0, 0, 0, 0.7);
   font-size: 2rem;
   letter-spacing: .2rem;
   font-family: Saira Condensed;
+  text-align: center;
+  width: 100%;
   color: rgba(255, 255, 255, 0.7);
 }
 
@@ -564,7 +577,7 @@
   text-align: center;
   letter-spacing: .1rem;
   padding: 2.5rem;
-  padding-bottom: 0;
+  text-shadow: 1px 1px #21a4ee;
 }
 
 .contact .mainImg {
@@ -590,6 +603,7 @@
           transform: translateY(-50%);
   font-family: Saira Condensed;
   padding: 10px;
+  text-shadow: 0 1px #d9d9d9, 0 2px #cccccc, 0 3px #bfbfbf, 0 4px #b3b3b3, 0 5px #a6a6a6, 0 5px 10px black;
 }
 
 .contact .interest {
@@ -598,9 +612,11 @@
   font-size: 2rem;
   letter-spacing: .2rem;
   font-family: Saira Condensed;
+  text-align: center;
   font-family: Saira Condensed;
   text-transform: uppercase;
   color: #105277;
+  font-size: 4rem;
 }
 
 .contact .interests {
@@ -729,6 +745,10 @@
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+.contact .contactMedia .contact a {
+  color: white;
+}
+
 .contact .contactMedia .contact .media {
   width: 11rem;
   cursor: pointer;
@@ -747,7 +767,7 @@
 }
 
 .contact .contactMedia .contact .media:hover span {
-  color: #105277;
+  color: #2982b5;
 }
 
 .contact .contactMedia .contact .media span {
@@ -860,10 +880,6 @@
   }
 }
 
-body {
-  background: #21a4ee;
-}
-
 @media screen and (max-width: 1300px) {
   html {
     font-size: 14px;
@@ -886,28 +902,5 @@ body {
   html {
     font-size: 8px;
   }
-}
-
-/* width */
-::-webkit-scrollbar {
-  width: 20px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 5px #105277;
-          box-shadow: inset 0 0 5px #105277;
-  background: #2982b5;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #105277;
-  opacity: .7;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #216891;
 }
 /*# sourceMappingURL=css.css.map */

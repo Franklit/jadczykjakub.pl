@@ -3,58 +3,13 @@
     padding: 0
     box-sizing: border-box
     text-decoration: none
-$fontTop: Saira Condensed
-$fontBottom: Roboto
 
-$mediumBlue: #2982b5
-$darkBlue: #105277
-$whiteOpa: rgba(255,255,255, 0.7)
-
-
-
-
-@mixin h1()
-    color: $whiteOpa
-    font-size: 4rem
-    font-family: $fontTop
-    text-transform: uppercase
-    text-align: center
-    letter-spacing: .1rem
-    padding: 2.5rem
-
-@mixin h2()
-    color: white
-    font-size: 3rem
-    font-family: $fontTop
-    text-transform: uppercase
-    text-align: center
-    letter-spacing: .2rem
-    padding: 3rem
-@mixin h3()
-    color: rgba(0, 0, 0, 0.7)
-    font-size: 2.5rem
-    font-family: $fontTop
-    letter-spacing: .2rem
-    
-
-
-@mixin h4()
-    color: rgba(0,0 ,0 ,.7 )
-    font-size: 2rem
-    letter-spacing: .2rem
-    font-family: $fontTop
-    
-
+@import "_variables.sass"
+@import "_mixin.sass"
 @import "_top.sass"
 @import "_describe.sass"
 @import "_portfolio.sass"
 @import "_contact.sass"
-
-body
-    background: $blue
-
-
-
 
 
 
@@ -75,35 +30,4 @@ body
     html
         font-size: 8px
 
-// @media screen and ( max-width: 760px )
-//     html
-//         font-size: 6px
 
-// @media screen and ( max-width: 650px )
-//     html
-//         font-size: 4px
-
-
-
-//scroll bar
-
-/* width
-::-webkit-scrollbar
-  width: 20px
-
-/* Track
-
-::-webkit-scrollbar-track
-  box-shadow: inset 0 0 5px $darkBlue
-  // border-radius: 10px
-  background: $mediumBlue
-
-/* Handle
-
-::-webkit-scrollbar-thumb
-  background: $darkBlue
-  opacity: .7
-  border-radius: 10px
-
-  &:hover
-    background: $mediumBlue*0.8

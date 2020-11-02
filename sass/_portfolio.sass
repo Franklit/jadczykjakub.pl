@@ -7,7 +7,6 @@
     padding-bottom: 5rem
     h1
         @include h1
-        // color: white
     .projects
         display: flex
         flex-wrap: wrap
@@ -18,7 +17,6 @@
             flex-direction: column
             align-items: center
             width: 40%
-            // background-color: rgba(16, 82, 119, 0.8)
             background-color: #23668a
             color: white
             padding: 30px
@@ -28,7 +26,6 @@
             color: $whiteOpa
             &:hover
                 background-color: $mediumBlue
-                
             &:hover h4
                 color: black                             
             img
@@ -36,12 +33,9 @@
                 height: 200px
                 object-fit: cover
             h4
-                width: 100%
-                text-align: center
-                
                 @include h4
+                width: 100%
                 color: $whiteOpa
-            
             p
                 width: 100%
                 text-align: center
@@ -50,7 +44,6 @@
         .inProgress
             cursor: default
             background-color: #0c2533
-
             &:hover
                 background-color: #0c2533
                 
@@ -67,46 +60,3 @@
                     
                 h3
                 p
-
-// @media screen and ( max-width: 700px )
-//     .portfolio
-//         .contact
-//             h1
-//                 display: none
-        // .projects
-        //     width: 100%
-        //     .project
-        //         width: 80% 
-        //         img 
-                    
-        //         h3
-        //         p
-// @media screen and ( max-width: 650px )
-//     .portfolio
-//         .projects
-//             .project
-//                 // margin: 10px
-//                 width: 100%
-//                 background-color: pink
-//                 display: flex
-//                 flex-direction: column
-//                 // flex-direction: column 
-//                 // justify-content: center
-//                 // &:nth-child(even)
-//                 //     flex-direction: row
-//                 // &:nth-child(odd)
-//                 //     flex-direction: row-reverse
-//                 img
-//                     // width: 50%
-//                     // height: 50%
-//                     background-color: orange
-//                     // height: 50%
-                    
-//                 p
-//                     // width: 50%
-//                     // height: 50%
-//                     background-color: red
-//                     // width: 300px
-//                     // height: 300px
-//                     // span
-//                     //     color: white
